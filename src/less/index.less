@@ -1,0 +1,125 @@
+@colorBlue:#00a8ff;
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+// 导航一
+.navbar{
+    background-color: #101010;
+    margin-bottom: 0px;
+    border: none;
+    border-radius: 0%;
+    .navbar-header{
+        a{
+            &:hover{
+                color: @colorBlue;
+            }
+        }
+    }
+    .navbar-brand{
+        color: #fff;
+        font-style: italic;
+        font-size: 20px;
+    }
+    .navbar-collapse{
+        .nav{
+            li{
+                a{
+                    color: #fff;
+                    &:hover{
+                        color: @colorBlue;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .tooltip{
+                img{
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
+
+// 导航二
+.navbar2{
+    background-color: #f8f8f8;
+    .container{
+        padding: 0px;
+        .nav{
+            a{
+                line-height: 50px;
+                text-align: center;
+
+                &:hover{
+                    color: @colorBlue;
+                    background-color: #ece5e5;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+// 特色栏
+.row{
+    .fea{
+        background: url(../../../imgs/feature01.png) no-repeat left center;
+        padding-left: 80px;
+        h3{
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        &:nth-of-type(2){
+            background-image: url(../../../imgs/feature02.png);
+        }
+
+        &:nth-of-type(3){
+            background-image: url(../../../imgs/feature03.png);
+        }
+    }
+}
+
+//公共面板样式
+.panel{
+    border: none;
+}
+// 头部
+.panel-default>.panel-heading{
+    background-color: #fff;
+    padding:0;
+
+    h3{
+        color: #2e8ece;
+        font-weight: bold;
+        margin: 0;
+        padding: 10px 0px;
+        border-bottom: 4px solid #2e8ece;
+    }
+
+    a{
+        padding-top: 26px;
+    }
+}
+
+.panel-body{
+    padding: 15px 0px 8px 0px;
+    p{
+        border-bottom: 1px dashed #ccc;
+        a{
+            color: #101010;
+            &:hover{
+                text-decoration: none;
+                color: #00a8ff;
+            }
+        }
+    }
+}
+
+//页脚
+footer{
+    background-color: #f8f8f8;
+    height: 200px;
+}
