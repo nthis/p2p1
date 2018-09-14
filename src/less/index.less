@@ -1,66 +1,14 @@
+
+@import url("./tempale.less");
+
+
 @colorBlue:#00a8ff;
 *{
     margin: 0px;
     padding: 0px;
 }
 
-// 导航一
-.navbar{
-    background-color: #101010;
-    margin-bottom: 0px;
-    border: none;
-    border-radius: 0%;
-    .navbar-header{
-        a{
-            &:hover{
-                color: @colorBlue;
-            }
-        }
-    }
-    .navbar-brand{
-        color: #fff;
-        font-style: italic;
-        font-size: 20px;
-    }
-    .navbar-collapse{
-        .nav{
-            li{
-                a{
-                    color: #fff;
-                    &:hover{
-                        color: @colorBlue;
-                        text-decoration: underline;
-                    }
-                }
-            }
-            .tooltip{
-                img{
-                    width: 100px;
-                }
-            }
-        }
-    }
-}
 
-// 导航二
-.navbar2{
-    background-color: #f8f8f8;
-    .container{
-        padding: 0px;
-        .nav{
-            a{
-                line-height: 50px;
-                text-align: center;
-
-                &:hover{
-                    color: @colorBlue;
-                    background-color: #ece5e5;
-                    font-size: 16px;
-                }
-            }
-        }
-    }
-}
 
 // 特色栏
 .row{
@@ -85,6 +33,7 @@
 //公共面板样式
 .panel{
     border: none;
+    box-shadow: none;
 }
 // 头部
 .panel-default>.panel-heading{
@@ -104,9 +53,16 @@
     }
 }
 
+@media screen and(max-width:520px){
+    .displayTable{
+        display: none;
+    }
+}
+
 .panel-body{
-    padding: 15px 0px 8px 0px;
+    padding: 15px 0px 0px 0px;
     p{
+        padding-bottom: 10px;
         border-bottom: 1px dashed #ccc;
         a{
             color: #101010;
@@ -116,10 +72,4 @@
             }
         }
     }
-}
-
-//页脚
-footer{
-    background-color: #f8f8f8;
-    height: 200px;
 }
