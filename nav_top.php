@@ -16,10 +16,16 @@
         <!-- 导航条 -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">首页</a></li>
-                <li><a href="#">小强</a></li>
+                <li><a href="./index.php">首页</a></li>
+
+                <!-- 登陆后显示的内容 -->
+                <li><a href="./personal.php" id="topusername">小强</a></li>
                 <li><a href="#">赶快充值</a></li>
-                <li><a href="#">注销</a></li>
+                <li><a href="./api/loginOut.php">注销</a></li>
+
+                <!-- 登陆前显示的内容 -->
+                <li><a href="./login.php">登陆</a></li>
+                
                 <li><a href="#">帮助</a></li>
                 <li><a href="#" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<img src='./imgs/contract.png' alt='二维码'>">联系客服</a></li>
             </ul>

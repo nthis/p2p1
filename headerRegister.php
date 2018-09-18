@@ -4,7 +4,7 @@
         <div class="navbar-header2">
             <ul class="nav navbar-nav navbar-left">
                 <li><a href="./index.php"> <img src="./imgs/logo.png" alt=""> </a></li>
-                <li><h3>用户登陆</h3></li>
+                <li><h3>用户注册</h3></li>
             </ul>
         </div>
 
