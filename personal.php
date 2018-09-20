@@ -36,24 +36,9 @@
     <div id="cont" class="container">
         <div class="row">
             <!-- 左部菜单 -->
-            <div class="col-sm-3 col-xs-6" id="mainMeua">
-                <div class="list-group">
-                    <a href="#" class="list-group-item">投资项目</a>
-                    <a href="#" class="list-group-item">借款项目</a>
-                    <a href="#" class="list-group-item pro">借款项目</a>
-                    <a href="#" class="list-group-item pro">还款明细</a>
-                    <a href="./personal.php" class="list-group-item active">账户信息</a>
-                    <a href="#" class="list-group-item pro">实名认证</a>
-                    <a href="#" class="list-group-item pro">银行卡管理</a>
-                    <a href="#" class="list-group-item pro">登陆记录</a>
-                    <a href="#" class="list-group-item">资产详情</a>
-                    <a href="#" class="list-group-item pro">账户流水</a>
-                    <a href="#" class="list-group-item pro">充值明细</a>
-                    <a href="#" class="list-group-item pro">提现记录</a>
-                    <a href="#" class="list-group-item pro">收款明细</a>
-                    <a href="#" class="list-group-item">个人资料</a>
-                </div>
-            </div>
+            <?php
+            require_once("./leftMeus.php")
+            ?>
 
             <!-- 右部内容 -->
             <div class="col-sm-9 col-xs-12" id="mainCont">
@@ -128,19 +113,6 @@
                                 </div>
                                 <p>您可以设置邮箱来接收重要信息</p>
                             </div>
-
-<!--                            <div class="col-sm-4 col-xs-12">-->
-<!--                                <div class="clearfix col">-->
-<!--                                    <img src="./imgs/baozhan.jpg" alt="" class="pull-left">-->
-<!---->
-<!--                                    <div class="pull-left">-->
-<!--                                        <h5>VIP会员</h5>-->
-<!--                                        普通用户 <a href="#">查看</a>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <p>VIP会员，让你更快捷的投资</p>-->
-<!--                            </div>-->
-
                         </div>
                     </div>
                 </div>
